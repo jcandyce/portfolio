@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styleabout.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Resume</title>
+</head>
+<body>
+
+<header>
+    <a class = "skip-main" href = "#main">Skip to main content</a>
+    <h1> Candyce Jessamy</h1>
+    <nav>
+        <div class = "topnav" id = "mytopnav">
+            <a class = "active" href = "resume.html">Resume</a>
+            <a href = "skills.html"> Skills</a>
+            <a href = "index.html" >About Me</a>
+            <a href = "index1.html">Projects</a>
+                      
+        </div>
+    </nav>
+</header>
+<main id="main" tabindex="-1">
+<h2>Work and Education</h2>
+<!--<div class = "linked">
+    <h2> Check out my resume below, and visit my LinkedIn profile here </h2>
+            <a href="https://www.linkedin.com/in/candyce-jessamy-97255979/">
+            <img alt="LinkedIn Icon" src="images/linkedin.jpg">
+            </a>
+</div>
+</main>
+<div class = "resume1">
+<img src="JessamyResumeNov18.pdf" alt = "resume">
+
+-->
+<div id = "resumeaccordion">
+<button class="accordion"><strong> Education</strong> (click to expand)</button>
+<div class="panel">
+    <br>
+  <p>M.S. Information - University of Michigan 2019 </p>
+  <p>B.A. Biopsychology, Cogniton, Neuroscience - University of Michigan 2016</p>
+</div>
+
+<button class="accordion"><strong>Relevant Positions Held</strong> (click to expand)</button>
+<div class="panel">
+    <br>
+    <p>User Experience Researcher</p>
+    <p>Human Factors Researcher</p>
+    <p>Product Manager</p>
+    <p>Market Researcher</p>
+</div>
+
+<button class="accordion"> <strong> Relevant Coursework</strong> (click to expand)</button>
+<div class="panel">
+    <br>
+    <p>Needs Assessement and Usability</p>
+    <p>Contextual Inquiry and Consulting Foundation</p>
+    <p>Statistics</p>
+    <p>Graphic Design</p>
+    <p>Introduction to Interaction Design</p>
+</div>
+</div>
+</main>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<br>
+
+<footer>
+        <p>Created by Candyce Jessamy</p>
+    </footer>
+    </body>
+    </html>
